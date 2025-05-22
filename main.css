@@ -67,11 +67,7 @@ input {
   -11px -4px 17px -17px #FFF ;
 }
 
-.divide-key,
-.multiply-key,
-.subtract-key,
-.add-key,
-.decimal-key {
+.operation-key {
   cursor: pointer;
   color: #fff;
   width: 50px;
