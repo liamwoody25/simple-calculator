@@ -1,17 +1,16 @@
 const currentDisplay = document.getElementById('display');
-const numberBtn = document.querySelectorAll('.number-keys');
+const numberBtn = document.getElementsByClassName('number-keys');
 const operatorBtns = document.querySelectorAll('.operation-key')
 let operator = ' ';
-let num1 = parseFloat(document.querySelectorAll('.number-keys').num1);
+let num1 = parseFloat(document.querySelectorAll('.number-keys')).textContent;
 let num2 = ' ';
 
 
-
+// gets the numbers and sends them to the screen
 function numberInput() {
   for (const button of numberBtn) {
     button.addEventListener('click', function(){
       display.value += button.textContent;
-
     })
   }
 }
@@ -27,7 +26,10 @@ function operatorInput() {
 function displayOutput() {
   const clearBtn = document.querySelector('.AC-key');
     clearBtn.addEventListener('click', function(){
-      display.value = '  ' ;
+      if (operator === ' ') {
+       
+      }
+      
     })
 }
 
@@ -37,10 +39,6 @@ function calculateNum() {
     equalsBtn.addEventListener('click', function(){
       
     })
-   
-  if ( operator === '/' ){
-    display.input = ' ÷ '
- }
 }
 
 
