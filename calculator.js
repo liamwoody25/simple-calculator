@@ -10,7 +10,8 @@ let num2 = ' ';
 function numberInput() {
   for (const button of numberBtn) {
     button.addEventListener('click', function(){
-      display.value += button.textContent;
+      display.value += button.innerHTML;
+      
     })
   }
 }
@@ -18,7 +19,7 @@ function numberInput() {
 function operatorInput() {
   for (const keys of operatorBtns ) {
     keys.addEventListener('click', function(){
-     display.value += keys.textContent;
+     display.value += keys.innerHTML;
     })
   }
 }
