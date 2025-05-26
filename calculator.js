@@ -5,7 +5,7 @@ const operateBtns = document.querySelectorAll('.operation-key');
 let num1 = parseInt(  );
 let num2 = ' ';
 let operator = display.value;
-let result = ' '
+let result ;
 
 function displayOutput() {
   display.value = 0 ;
