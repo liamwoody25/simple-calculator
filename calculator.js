@@ -2,7 +2,7 @@ const currentDisplay = document.getElementById('display');
 const numBtn = document.getElementsByClassName('number-keys');
 const operateBtns = document.querySelectorAll('.operation-key');
 
-let num1 = parseInt(display.value += button);
+let num1 = parseInt(  );
 let num2 = ' ';
 let operator = display.value;
 let result = ' '
